@@ -36,12 +36,17 @@ public:
 	~N3rDEngine();
 
 	void LoadXmlConfig(const string &filename);
+	void ClearConfig(void);
 
+	void LoadScriptFile(const string &procedureName, const string &filename);
+
+
+	void ResetEngine(void);
 
 protected:
 
 private:
 
-	LOG* log;
+	LOG* log;		// instance of log class
 
 };
